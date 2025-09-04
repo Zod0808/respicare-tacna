@@ -48,8 +48,27 @@ src/
 
 4. IA Services
 ai-services/
-├── medical-history-processor/
-├── symptom-analyzer/
-├── models/
-├── data/
-└── api/
+├── main.py                          # Aplicación FastAPI principal
+├── requirements.txt                 # Dependencias completas
+├── dockerfile                       # Configuración Docker actualizada
+├── env.example                      # Variables de entorno
+├── README.md                        # Documentación completa
+├── core/                           # Módulos centrales
+│   ├── config.py                   # Configuración
+│   ├── database.py                 # MongoDB
+│   └── cache.py                    # Redis
+├── models/                         # Modelos de IA
+│   └── model_manager.py            # Gestor de modelos
+├── api/routes/                     # API REST
+│   ├── health.py                   # Health checks
+│   ├── medical_history.py          # Procesamiento historias
+│   └── symptom_analyzer.py         # Análisis síntomas
+├── medical-history-processor/      # Procesador historias
+│   └── processor.py                # Lógica procesamiento
+├── symptom-analyzer/              # Analizador síntomas
+│   └── analyzer.py                 # Lógica análisis
+└── data/                          # Datos y utilidades
+    ├── medical_data.py            # Procesamiento datos
+    └── samples/                   # Datos de muestra
+        ├── medical_histories.json
+        └── symptoms.json
