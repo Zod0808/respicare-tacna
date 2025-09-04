@@ -1,5 +1,5 @@
 # Clonar e inicializar proyecto
-git clone <repo-url> respicare-tacna
+git clone https://github.com/Zod0808/respicare-tacna.git respicare-tacna
 cd respicare-tacna
 
 # Setup inicial
